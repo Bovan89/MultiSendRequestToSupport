@@ -15,6 +15,7 @@ namespace MultiSendRequestToSupport
         static int i2;
         static int rc;
         static string createReqUrl;
+        static bool stop;
 
         static void Main(string[] args)
         {
@@ -49,21 +50,21 @@ namespace MultiSendRequestToSupport
             Console.WriteLine();
 
             //Поток в котором будет отправка
-            var th = new Thread(new ThreadStart(StartSending));
+            var th = new Thread(new ThreadStart(StartSending));            
             th.Start();
 
             Console.ReadLine();
 
             if (th != null && th.ThreadState == ThreadState.Running)
             {
-                th.Abort();
+                stop = true;
             }
         }
 
 
         public static void StartSending()
         {
-            while (rc < 0 || rc > 0)
+            while ((rc < 0 || rc > 0 ) && !stop)
             {
                 try
                 {
@@ -86,8 +87,10 @@ namespace MultiSendRequestToSupport
         {
             DateTime s1 = DateTime.Now;
             int sleepTime = new Random().Next(Math.Min(i1, i2), Math.Max(i1, i2));
+
             Console.WriteLine($"Ждем {sleepTime}");
-            while ((DateTime.Now - s1).Seconds < sleepTime)
+
+            while ((DateTime.Now - s1).Seconds < sleepTime && !stop)
             {
                 //sleep                    
             }
