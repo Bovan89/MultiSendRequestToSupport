@@ -3,3 +3,10 @@ c:\users\pechiorinvy\documents\visual studio 2015\Projects\MultiSendRequestToSup
 c:\users\pechiorinvy\documents\visual studio 2015\Projects\MultiSendRequestToSupport\MultiSendRequestToSupport\bin\Debug\MultiSendRequestToSupport.pdb
 c:\users\pechiorinvy\documents\visual studio 2015\Projects\MultiSendRequestToSupport\MultiSendRequestToSupport\obj\Debug\MultiSendRequestToSupport.exe
 c:\users\pechiorinvy\documents\visual studio 2015\Projects\MultiSendRequestToSupport\MultiSendRequestToSupport\obj\Debug\MultiSendRequestToSupport.pdb
+E:\Proj\MultiSendRequestToSupport\MultiSendRequestToSupport\bin\Debug\MultiSendRequestToSupport.exe.config
+E:\Proj\MultiSendRequestToSupport\MultiSendRequestToSupport\bin\Debug\MultiSendRequestToSupport.exe
+E:\Proj\MultiSendRequestToSupport\MultiSendRequestToSupport\bin\Debug\MultiSendRequestToSupport.pdb
+E:\Proj\MultiSendRequestToSupport\MultiSendRequestToSupport\obj\Debug\MultiSendRequestToSupport.csprojAssemblyReference.cache
+E:\Proj\MultiSendRequestToSupport\MultiSendRequestToSupport\obj\Debug\MultiSendRequestToSupport.csproj.CoreCompileInputs.cache
+E:\Proj\MultiSendRequestToSupport\MultiSendRequestToSupport\obj\Debug\MultiSendRequestToSupport.exe
+E:\Proj\MultiSendRequestToSupport\MultiSendRequestToSupport\obj\Debug\MultiSendRequestToSupport.pdb
