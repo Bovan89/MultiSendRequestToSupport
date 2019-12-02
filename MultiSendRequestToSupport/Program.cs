@@ -90,7 +90,7 @@ namespace MultiSendRequestToSupport
 
             Console.WriteLine($"Ждем {sleepTime}");
 
-            while ((DateTime.Now - s1).Seconds < sleepTime && !stop)
+            while ((DateTime.Now - s1).TotalSeconds < sleepTime && !stop)
             {
                 //sleep                    
             }
