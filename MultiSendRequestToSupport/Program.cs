@@ -65,13 +65,20 @@ namespace MultiSendRequestToSupport
         {
             while (rc < 0 || rc > 0)
             {
-                Request req = new Request() { SupportUri = new Uri(createReqUrl) };
-                req.SendRequest();
-                                
-                //Thread.Sleep(1000 * new Random().Next(Math.Min(i1, i2), Math.Max(i1, i2)));
-                Sleep();
+                try
+                {
+                    Request req = new Request() { SupportUri = new Uri(createReqUrl) };
+                    req.SendRequest();
 
-                rc--;
+                    //Thread.Sleep(1000 * new Random().Next(Math.Min(i1, i2), Math.Max(i1, i2)));
+                    Sleep();
+
+                    rc--;
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine($"Запрос выдал исключение" + '\n' + ex.Message + '\n' + ex.InnerException?.Message + '\n');
+                }                
             }
         }
 
@@ -79,6 +86,7 @@ namespace MultiSendRequestToSupport
         {
             DateTime s1 = DateTime.Now;
             int sleepTime = new Random().Next(Math.Min(i1, i2), Math.Max(i1, i2));
+            Console.WriteLine($"Ждем {sleepTime}");
             while ((DateTime.Now - s1).Seconds < sleepTime)
             {
                 //sleep                    

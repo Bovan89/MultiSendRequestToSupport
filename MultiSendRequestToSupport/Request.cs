@@ -35,7 +35,7 @@ namespace MultiSendRequestToSupport
             }
             catch (Exception ex)
             {
-                Console.WriteLine($"<--- Запрос '{Text}' выдал исключение" + '\n' + ex.Message + '\n' + ex.InnerException?.Message + '\n');
+                Console.WriteLine($"Запрос '{Text}' выдал исключение" + '\n' + ex.Message + '\n' + ex.InnerException?.Message + '\n');
             }
         }
 
